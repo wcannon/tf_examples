@@ -1,1 +1,1 @@
-bucket_name = "wc_test_bucket_1"
+bucket_name = "wc-test-bucket-1"
