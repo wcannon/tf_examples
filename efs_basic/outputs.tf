@@ -25,3 +25,19 @@ output "EFS-size-in-bytes" {
 output "EFS-tags-all" {
     value = aws_efs_file_system.vol1.tags_all
 }
+
+output "EFS-mount-target-east-id" {
+    value = aws_efs_mount_target.mnt_tgt_east.id
+}
+
+output "EFS-mount-target-east-dns-name" {
+    value = aws_efs_mount_target.mnt_tgt_east.dns_name
+}
+
+output "EFS-mount-target-east-mount-target-dns-name" {
+    value = aws_efs_mount_target.mnt_tgt_east.mount_target_dns_name
+}
+
+output "EFS-mount-target-east-file-system-arn" {
+    value = aws_efs_mount_target.mnt_tgt_east.file_system_arn
+}
