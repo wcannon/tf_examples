@@ -25,7 +25,7 @@ output "EFS-size-in-bytes" {
 output "EFS-tags-all" {
     value = aws_efs_file_system.vol1.tags_all
 }
-
+/*
 output "EFS-mount-target-east-id" {
     value = aws_efs_mount_target.mnt_tgt_east.id
 }
@@ -48,4 +48,17 @@ output "EFS-mount-target-east-availability-zone-name" {
 
 output "EFS-mount-target-east-availability-zone-id" {
     value = aws_efs_mount_target.mnt_tgt_east.availability_zone_id
+}
+
+*/
+output "EFS-mount-target-east-mount-target-dns-name-1a" {
+    value = aws_efs_mount_target.mnt_tgt_east_1a.mount_target_dns_name
+}
+
+output "EFS-mount-target-east-mount-target-dns-name-1b" {
+    value = aws_efs_mount_target.mnt_tgt_east_1b.mount_target_dns_name
+}
+
+output "EFS-mount-target-east-mount-target-dns-name-1c" {
+    value = aws_efs_mount_target.mnt_tgt_east_1c.mount_target_dns_name
 }
