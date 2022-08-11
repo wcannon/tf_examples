@@ -41,3 +41,11 @@ output "EFS-mount-target-east-mount-target-dns-name" {
 output "EFS-mount-target-east-file-system-arn" {
     value = aws_efs_mount_target.mnt_tgt_east.file_system_arn
 }
+
+output "EFS-mount-target-east-availability-zone-name" {
+    value = aws_efs_mount_target.mnt_tgt_east.availability_zone_name
+}
+
+output "EFS-mount-target-east-availability-zone-id" {
+    value = aws_efs_mount_target.mnt_tgt_east.availability_zone_id
+}
