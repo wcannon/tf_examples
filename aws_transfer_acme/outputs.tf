@@ -30,6 +30,10 @@ output aws_transfer_server-company-sftp-host-key-fingerprint {
     value = aws_transfer_server.company_sftp.host_key_fingerprint
 }
 
-output aws_transfer_server-company-sftp-tags-all{
+output aws_transfer_server-company-sftp-tags-all {
     value = aws_transfer_server.company_sftp.tags_all
+}
+
+output EIP-ACME-1-ip-address {
+    value = aws_eip.acme_1.public_ip
 }
