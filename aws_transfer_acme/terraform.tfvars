@@ -1,9 +1,9 @@
-bucket_name     = "acme-ftp"
-subnet_id_1     = "subnet-0eca688eca8a4ca59"
-subnet_id_2     = "subnet-062ba339b2b6610e5"
-vpc_id      = "vpc-055238441ff8dbfd2"
+bucket_name  = "acme-ftp"
+subnet_id_1  = "subnet-0eca688eca8a4ca59"
+subnet_id_2  = "subnet-062ba339b2b6610e5"
+vpc_id       = "vpc-055238441ff8dbfd2"
 ip_whitelist = ["76.17.153.117/32", "2.2.2.2/32"]
-host_key    =  <<-EOT
+host_key     = <<-EOT
 -----BEGIN RSA PRIVATE KEY-----
 MIIG5QIBAAKCAYEAyvzFvRwVwIPBzjNVBz8hl/JJRZYmjQ/T9kNOnz/oJHhLYHWL
 N03FWl7dUBpr8bssUKLo+Qs0KLeJWq1ktMuwiOKWDvcTZ8zPWuWjfm1qsRyqCOpG
