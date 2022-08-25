@@ -102,7 +102,7 @@ resource "aws_security_group" "allow_sftp" {
     from_port        = 22
     to_port          = 22
     protocol         = "tcp"
-    cidr_blocks      = ["76.17.153.117/32"]
+    cidr_blocks      = var.ip_whitelist
   }
 
   egress {

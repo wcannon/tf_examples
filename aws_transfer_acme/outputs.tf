@@ -37,3 +37,7 @@ output aws_transfer_server-company-sftp-tags-all {
 output EIP-ACME-1-ip-address {
     value = aws_eip.acme_1.public_ip
 }
+
+output white-listed-ip-addresses {
+    value = var.ip_whitelist
+}
