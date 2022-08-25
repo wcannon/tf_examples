@@ -142,6 +142,8 @@ resource "aws_transfer_server" "company_sftp" {
   endpoint_type          = "VPC"
   host_key               = var.host_key
   logging_role           = aws_iam_role.transfer_logging.arn
+  pre_authentication_login_banner = "Only authorized users may use this system"
+  post_authentication_login_banner = "Play nicely with others"
 
   endpoint_details {
     address_allocation_ids = [aws_eip.ip1.id, aws_eip.ip2.id]
