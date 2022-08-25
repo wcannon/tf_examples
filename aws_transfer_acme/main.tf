@@ -10,15 +10,19 @@ resource "aws_s3_bucket" "a" {
 resource "aws_transfer_server" "company_sftp" {
   identity_provider_type = "SERVICE_MANAGED"
   endpoint_type = "VPC"
+  host_key = var.host_key
 
   endpoint_details {
-    address_allocation_ids = [aws_eip.acme_1.id]
+    address_allocation_ids = [aws_eip.acme_1.id, aws_eip.acme_2.id]
     # subnet_ids             = [aws_subnet.example.id]
-    subnet_ids             = [var.subnet_id]
+    subnet_ids             = [var.subnet_id_1, var.subnet_id_2]
     # vpc_id                 = aws_vpc.example.id
     vpc_id                 = var.vpc_id
     security_group_ids     = [aws_security_group.allow_sftp.id]
   }
+
+
+
 
   tags = {
     NAME = "company_sftp"
@@ -81,6 +85,10 @@ resource "aws_transfer_ssh_key" "bob_key" {
 
 
 resource "aws_eip" "acme_1" {
+  vpc      = true
+}
+
+resource "aws_eip" "acme_2" {
   vpc      = true
 }
 
