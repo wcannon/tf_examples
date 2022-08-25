@@ -7,9 +7,16 @@ Items that need updating or implementation
 - Review usage of S3 access points for further usage
 - Use "logical directories" for sftp users and chroot them in their directory
 - Add basic workflow
+- Add a stats dashboard in cloudwatch
+
 
 
 Company specific
 - use data lookups for vpc, subnet info
 - update for needed changes to pass sentinel policies
-- 
+- determine how to consume logs in splunk
+- determine if alerting is possible
+
+
+Later:
+- identify how to transform this into a generic module and create tasks to contain that process
