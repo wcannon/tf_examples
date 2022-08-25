@@ -1,0 +1,15 @@
+Items that need updating or implementation
+
+- Tighten  up S3 iam policy for the acme user
+- Confirm logging is happening 
+- Update outputs for usefulness / clarity
+- Review code and add comments to code where needed
+- Review usage of S3 access points for further usage
+- Use "logical directories" for sftp users and chroot them in their directory
+- Add basic workflow
+
+
+Company specific
+- use data lookups for vpc, subnet info
+- update for needed changes to pass sentinel policies
+- 
